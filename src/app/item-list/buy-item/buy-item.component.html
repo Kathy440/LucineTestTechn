@@ -1,0 +1,20 @@
+<h2 class="title">Votre panier</h2>
+<li class="list-group-item" *ngFor="let basket of baskets; let i = index">
+  <h3 class="list-group-item-heading">
+    {{ basket.title }}
+    <button class="btn btn-default pull-right" (click)="onDeleteBasket(basket)">
+      <i class="far fa-trash-alt"></i>
+    </button>
+  </h3>
+  <p class="list-group-item-text">{{ basket.description }}</p>
+</li>
+
+<div class="pull-left">
+  <button type="button" class="btn btn-secondary" (click)="onBack()">Retour</button>
+</div>
+<br>
+
+<button class="valide btn btn-success" (click)="onValideBasket()">Valider</button>
+
+
+

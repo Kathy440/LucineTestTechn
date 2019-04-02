@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h2 class="title">Vos articles</h2>
+    <div class="row">
+      <div class="">
+        <div class="list-group">
+          <li class="list-group-item" *ngFor="let item of items; let i = index">
+            <!--(click)="onViewItem(i)"-->
+            <h3 class="list-group-item-heading">
+              {{ item.title }}
+              <button class="btn btn-default pull-right" (click)="onDeleteItem(item)">
+                <i class="far fa-trash-alt"></i>
+              </button>
+            </h3>
+            <p class="list-group-item-text">{{ item.description }}</p>
+            <button (click)="onPushBasket(item)"><i class="fas fa-shopping-basket">Ajouter au panier</i></button>
+          </li>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <button class="btn btn-primary" (click)="onNewItem()">Nouvelle artcile</button>
+  </div>
+</div>
