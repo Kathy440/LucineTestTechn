@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Information
+
+Télécharger le fichier, 
+faite un npm install, puis faite la commande ng serve --open.
+
+Guide d'utilisation du site : 
+- vous pouvez créer un compte et ensuite vous connecter avec votre identifiant. 
+- ensuite, vous pouvez accéder aux pages "Articles" et "Votre panier."
+- sur la page Articles, vous pouvez créer un article, il s'ajoutera à la liste ensuite vous pouvez l'ajouter à votre panier.
+- une fois sur la page "votre panier" vous voyez les articles que vous avez ajouter et vous pouvez les supprimer
